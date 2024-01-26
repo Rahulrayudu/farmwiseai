@@ -1,0 +1,443 @@
+{
+	"info": {
+		"_postman_id": "55ca6396-d3e8-4b0f-b999-9bf7359a7f95",
+		"name": "farmwiseai",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30862555"
+	},
+	"item": [
+		{
+			"name": "get_all_books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/get_all_books",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"get_all_books"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get_all_books",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/get_all_books",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"get_all_books"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.1 Python/3.11.3"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 26 Jan 2024 11:00:56 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "886"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"books\": [\n        {\n            \"author\": \"F. Scott Fitzgerald\",\n            \"id\": 1,\n            \"isbn\": \"978-3-16-1484\",\n            \"price\": 10.99,\n            \"quantity\": 100,\n            \"title\": \"The Great Gatsby\"\n        },\n        {\n            \"author\": \"Harper Lee\",\n            \"id\": 2,\n            \"isbn\": \"978-0-06-1120\",\n            \"price\": 12.99,\n            \"quantity\": 75,\n            \"title\": \"To Kill a Mockingbird\"\n        },\n        {\n            \"author\": \"Updated Author\",\n            \"id\": 3,\n            \"isbn\": \"978-0-452-284\",\n            \"price\": 29.99,\n            \"quantity\": 75,\n            \"title\": \"Updated Title\"\n        },\n        {\n            \"author\": \"Jane Austen\",\n            \"id\": 5,\n            \"isbn\": \"978-0-19-2802\",\n            \"price\": 11.99,\n            \"quantity\": 110,\n            \"title\": \"Pride and Prejudice\"\n        },\n        {\n            \"author\": \"F. Scott Fitzgerald\",\n            \"id\": 8,\n            \"isbn\": \"978-1-16-140\",\n            \"price\": 10.91,\n            \"quantity\": 100,\n            \"title\": \"The sample insert\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/delete_book/978-0-316-769?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiMjBiY2UxMDAxIiwiZXhwaXJhdGlvbiI6IjIwMjQtMDEtMjYgMTA6NDc6NTEuOTgxOTgyIn0.eLTrbiPsaowDjYps1M6cei53LiK5l_v4QRL8f3O5l1o",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"delete_book",
+						"978-0-316-769"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiMjBiY2UxMDAxIiwiZXhwaXJhdGlvbiI6IjIwMjQtMDEtMjYgMTA6NDc6NTEuOTgxOTgyIn0.eLTrbiPsaowDjYps1M6cei53LiK5l_v4QRL8f3O5l1o"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "delete",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/delete_book/978-0-316-769?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiMjBiY2UxMDAxIiwiZXhwaXJhdGlvbiI6IjIwMjQtMDEtMjYgMTA6NDc6NTEuOTgxOTgyIn0.eLTrbiPsaowDjYps1M6cei53LiK5l_v4QRL8f3O5l1o",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"delete_book",
+								"978-0-316-769"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiMjBiY2UxMDAxIiwiZXhwaXJhdGlvbiI6IjIwMjQtMDEtMjYgMTA6NDc6NTEuOTgxOTgyIn0.eLTrbiPsaowDjYps1M6cei53LiK5l_v4QRL8f3O5l1o"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.1 Python/3.11.3"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 26 Jan 2024 10:48:46 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "45"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Book deleted successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Updated Title\",\r\n  \"author\": \"Updated Author\",\r\n  \"isbn\": \"978-1234567890\",\r\n  \"price\": 29.99,\r\n  \"quantity\": 75\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/update_book/978-0-452-284?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiMjBiY2UxMDAxIiwiZXhwaXJhdGlvbiI6IjIwMjQtMDEtMjYgMTA6NDc6NTEuOTgxOTgyIn0.eLTrbiPsaowDjYps1M6cei53LiK5l_v4QRL8f3O5l1o",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"update_book",
+						"978-0-452-284"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiMjBiY2UxMDAxIiwiZXhwaXJhdGlvbiI6IjIwMjQtMDEtMjYgMTA6NDc6NTEuOTgxOTgyIn0.eLTrbiPsaowDjYps1M6cei53LiK5l_v4QRL8f3O5l1o"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "update",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Updated Title\",\r\n  \"author\": \"Updated Author\",\r\n  \"isbn\": \"978-1234567890\",\r\n  \"price\": 29.99,\r\n  \"quantity\": 75\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/update_book/978-0-452-284?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiMjBiY2UxMDAxIiwiZXhwaXJhdGlvbiI6IjIwMjQtMDEtMjYgMTA6NDc6NTEuOTgxOTgyIn0.eLTrbiPsaowDjYps1M6cei53LiK5l_v4QRL8f3O5l1o",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"update_book",
+								"978-0-452-284"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiMjBiY2UxMDAxIiwiZXhwaXJhdGlvbiI6IjIwMjQtMDEtMjYgMTA6NDc6NTEuOTgxOTgyIn0.eLTrbiPsaowDjYps1M6cei53LiK5l_v4QRL8f3O5l1o"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.1 Python/3.11.3"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 26 Jan 2024 10:52:36 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "45"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Book updated successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "get_book_by_isbn",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/get_book_by_isbn/978-0-452-284",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"get_book_by_isbn",
+						"978-0-452-284"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/get_book_by_isbn/978-0-452-284",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"get_book_by_isbn",
+								"978-0-452-284"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.1 Python/3.11.3"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 26 Jan 2024 10:54:18 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "163"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"book\": {\n        \"author\": \"Updated Author\",\n        \"id\": 3,\n        \"isbn\": \"978-0-452-284\",\n        \"price\": 29.99,\n        \"quantity\": 75,\n        \"title\": \"Updated Title\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "insert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"The sample insert\",\r\n  \"author\": \"F. Scott Fitzgerald\",\r\n  \"isbn\": \"978-1-16-140\",\r\n  \"price\": 10.91,\r\n  \"quantity\": 100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/insert_data?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiMjBiY2UxMDAxIiwiZXhwaXJhdGlvbiI6IjIwMjQtMDEtMjYgMTA6NDc6NTEuOTgxOTgyIn0.eLTrbiPsaowDjYps1M6cei53LiK5l_v4QRL8f3O5l1o",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"insert_data"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiMjBiY2UxMDAxIiwiZXhwaXJhdGlvbiI6IjIwMjQtMDEtMjYgMTA6NDc6NTEuOTgxOTgyIn0.eLTrbiPsaowDjYps1M6cei53LiK5l_v4QRL8f3O5l1o"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "insert",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"The sample insert\",\r\n  \"author\": \"F. Scott Fitzgerald\",\r\n  \"isbn\": \"978-1-16-140\",\r\n  \"price\": 10.91,\r\n  \"quantity\": 100\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/insert_data?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiMjBiY2UxMDAxIiwiZXhwaXJhdGlvbiI6IjIwMjQtMDEtMjYgMTA6NDc6NTEuOTgxOTgyIn0.eLTrbiPsaowDjYps1M6cei53LiK5l_v4QRL8f3O5l1o",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"insert_data"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiMjBiY2UxMDAxIiwiZXhwaXJhdGlvbiI6IjIwMjQtMDEtMjYgMTA6NDc6NTEuOTgxOTgyIn0.eLTrbiPsaowDjYps1M6cei53LiK5l_v4QRL8f3O5l1o"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.1 Python/3.11.3"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 26 Jan 2024 10:56:21 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Data inserted successfully\"\n}"
+				}
+			]
+		}
+	]
+}
